@@ -188,6 +188,9 @@ android {
 }
 
 dependencies {
+    compile project(':@mauron85_react-native-background-geolocation')
+    implementation 'androidx.localbroadcastmanager:localbroadcastmanager:1.0.0'
+
     implementation project  (':react-native-maps')
 
     implementation fileTree(dir: "libs", include: ["*.jar"])

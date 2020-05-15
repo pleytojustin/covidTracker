@@ -10,16 +10,23 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
+    "@mauron85/react-native-background-geolocation": "^0.6.3",
     "@react-native-community/geolocation": "^2.0.2",
+    "@react-native-community/masked-view": "^0.1.10",
     "@react-navigation/material-bottom-tabs": "^5.1.14",
+    "axios": "^0.19.2",
     "react": "16.11.0",
     "react-native": "0.62.2",
+    "react-native-exception-handler": "^2.10.8",
     "react-native-gesture-handler": "^1.6.1",
     "react-native-maps": "0.27.1",
     "react-native-paper": "^3.9.0",
+    "react-native-safe-area-context": "^1.0.0",
+    "react-native-screens": "^2.7.0",
     "react-native-vector-icons": "^6.6.0",
     "react-navigation": "^4.3.9",
-    "react-navigation-material-bottom-tabs": "^2.2.12"
+    "react-navigation-material-bottom-tabs": "^2.2.12",
+    "react-navigation-stack": "^2.4.0"
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",

@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 
-export default class Info extends Component {
+export default class CheckList extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Info</Text>
+        <Text>Check List</Text>
       </View>
     );
   }

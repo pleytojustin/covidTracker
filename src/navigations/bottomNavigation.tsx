@@ -6,49 +6,12 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import Contact from '../scenes/contact';
 import HealthCenters from '../scenes/healthCenters';
 import HeatMap from '../scenes/heatMap';
-import Info from '../scenes/info';
-import TrackingToggle from '../scenes/trackingToggle';
+import Profile from '../scenes/profile';
+import CheckList from '../scenes/checkList';
+import LoginHealthWorker from '../scenes/loginHealthWorker';
 
 const TabNavigator = createMaterialBottomTabNavigator(
   {
-    HealthCenters: {
-      screen: HealthCenters,
-      navigationOptions: {
-        tabBarLabel: 'Centers',
-        tabBarIcon: ({tintColor}) => (
-          <View>
-            <MaterialCommunityIcons
-              name="hospital-building"
-              color={tintColor}
-              size={27}
-            />
-          </View>
-        ),
-        // activeColor: '#f60c0d',
-        inactiveColor: '#7c838a',
-        barStyle: {backgroundColor: '#1c233a'},
-      },
-    },
-    TrackingToggle: {
-      screen: TrackingToggle,
-      navigationOptions: {
-        tabBarLabel: 'Tracking',
-        tabBarIcon: ({tintColor}) => (
-          <View>
-            <MaterialCommunityIcons
-              name="map-marker"
-              color={tintColor}
-              size={27}
-            />
-          </View>
-        ),
-        // activeColor: '#f60c0d',
-        inactiveColor: '#7c838a',
-        barStyle: {backgroundColor: '#1c233a'},
-      },
-    },
-
-
     HeatMap: {
       screen: HeatMap,
       navigationOptions: {
@@ -62,53 +25,85 @@ const TabNavigator = createMaterialBottomTabNavigator(
             />
           </View>
         ),
-        // activeColor: '#f60c0d',
-        inactiveColor: '#7c838a',
-        barStyle: {backgroundColor: '#1c233a'},
       },
     },
-    Info: {
-      screen: Info,
+    HealthCenters: {
+      screen: HealthCenters,
       navigationOptions: {
-        tabBarLabel: 'Info',
+        tabBarLabel: 'Centers',
         tabBarIcon: ({tintColor}) => (
           <View>
             <MaterialCommunityIcons
-              name="information"
+              name="hospital-building"
               color={tintColor}
               size={27}
             />
           </View>
         ),
-        // activeColor: '#f60c0d',
-        inactiveColor: '#7c838a',
-        barStyle: {backgroundColor: '#305da6'},
       },
     },
-    Contact: {
-      screen: Contact,
+    Profile: {
+      screen: Profile,
       navigationOptions: {
-        tabBarLabel: 'Help',
+        tabBarLabel: 'Profile',
         tabBarIcon: ({tintColor}) => (
           <View>
             <MaterialCommunityIcons
-              name="alert"
+              name="account-circle"
+              color={tintColor}
+              size={26}
+            />
+          </View>
+        ),
+      },
+    },
+    CheckList: {
+      screen: CheckList,
+      navigationOptions: {
+        tabBarLabel: 'Checklist',
+        tabBarIcon: ({tintColor}) => (
+          <View>
+            <MaterialCommunityIcons
+              name="format-list-checks"
               color={tintColor}
               size={27}
             />
           </View>
         ),
-        // activeColor: '#f60c0d',
-        inactiveColor: '#616569',
-        barStyle: {backgroundColor: '#305da6'},
+      },
+    },
+    LoginHealthWorker: {
+      screen: LoginHealthWorker,
+      navigationOptions: {
+        tabBarLabel: 'Upload',
+        tabBarIcon: ({tintColor}) => (
+          <View>
+            <MaterialCommunityIcons
+              name="upload"
+              color={tintColor}
+              size={27}
+            />
+          </View>
+        ),
       },
     },
   },
   {
-    initialRouteName: 'HeatMap',
-    activeColor: '#f0edf6',
-    inactiveColor: '#226557',
-    barStyle: {backgroundColor: '#1c233a'},
+    initialRouteName: 'Profile',
+    // ORIGINAL
+    // activeColor: '#f0edf6',
+    // inactiveColor: '#7c838a',
+    // barStyle: {backgroundColor: '#1c233a'},
+
+    // backgroundColor: '#323232', //GREY
+    // backgroundColor: '#68e0a0', // GREEN
+    // backgroundColor: '#fdeb92', // YELLOW
+    // backgroundColor: '#ef7391', // YELLOW
+    // activeColor: '#323232',
+
+    activeColor: '#4252fb',
+    inactiveColor: '#dbddeb',
+    barStyle: {backgroundColor: '#01BAEF'},
   },
 );
 
